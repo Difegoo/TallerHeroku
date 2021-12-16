@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Base de datos</title>
+</head>
+<style> 
+ .Estilotexto{
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+}
+html{
+    background: #40576d;
+}
+td{
+    color: white;
+}
+ </style>
+
+    <h1 class="Estilotexto">Tabla de Registros</h1>
+    
+    <div style="text-align:center;">      
+        <table border="1" style="margin: 0 auto;">
+            <thead>
+                <tr bgcolor= "red">
+                    <td>Nombre </td>
+                    
+                    <td>Apellido</td>
+                    
+                    <td>Edad</td>
+                    
+                    <td>Telefono</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for person in people %}
+                <tr>
+                    <td> 
+                        {{person[0]}} 
+                    </td>
+                    <td> 
+                        {{person[1]}}  
+                    </td>
+                    <td> 
+                        {{person[2]}} 
+                    </td>
+                    <td> 
+                        {{person[3]}}  
+                    </td>
+    
+                </tr>
+                {% endfor %}
+
+            </tbody>
+            
+      
+
+        </table>
+    </div> 
+
+
+</html>

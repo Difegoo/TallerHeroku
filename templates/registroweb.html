@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css" />
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <div class="container"> <!--Centrar en la pantalla-->
+        <h1>FORMULARIO DE REGISTRO DE DATOS</h1>
+
+        <form method="POST" action="{{url_for('indato')}}" >
+            <P1><label for="nombre"> Nombre : </label> <br></P1>
+            <input type="text" name="nombre" placeholder="Nombre" required> <br><br>
+            <P1><label for="nombre"> Apellido : </label> <br></P1>
+            <input type="text" name="apellido" placeholder="Apellido" required> <br><br>
+            <P1><label for="number"> Edad : </label> <br></P1>
+            <input type="text" name="edad" placeholder="Edad" required> <br><br>
+            <P1><label for="number"> Telefono : </label> <br></P1>
+            <input type="text" name="telefono" placeholder="Telefono" required> <br><br>
+            
+
+            
+            <button type="submit" class="btn btn-primary">Enviar Informacion</button>
+            
+            <style type="text/css">
+                h1 {
+                    color: white;
+                    font-size: 45px;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-style: italic;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+                
+                html {
+                    background: #40576d;
+                    
+                }
+
+                p1 {
+                    color: red;
+                    font-size: 19px;
+                    text-align: center;
+                    
+                }
+                form { 
+                    margin: 0 auto; 
+                    width:250px;
+                }
+
+            </style>
+        
+        </form>
+
+    </div>
+</body>
+</html>
